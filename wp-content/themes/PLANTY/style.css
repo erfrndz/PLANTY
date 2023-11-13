@@ -13,16 +13,16 @@
  */
 
 
+  /*GENERAL*/
 
-/*GENERAL*/
-
-@media screen and (min-width: 320px) and (max-width: 2560px) {
+  @media screen and (min-width: 320px) and (max-width: 2560px) {
     .site-main {
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
-}
+ }
+    
 
 /* Page "Accueil" PLANTY */
 
@@ -457,15 +457,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
                                      /*Qtt*/
 /*LAPTOP*/
 @media screen and (min-width: 1025px) and (max-width: 2560px) {
@@ -768,15 +759,15 @@ background-color: #e0b9b4;
 .elementor-element-f081438 {
     max-width: 100%;
     width: 98%;
-    padding: 0 auto;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
 }
 
 .minimal-header {
 max-width: 100%;
 width: 100%;
-padding: 0 auto;
-margin: 0 auto;
+padding: 0;
+margin: 0;
 }
 
 #site-header-inner {
@@ -787,7 +778,7 @@ margin: 0 auto;
 .container {
     max-width: 100%;
     width: 100%;
-    padding: 0 auto;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -815,4 +806,10 @@ margin: 0 auto;
     right: 0 !important;
 }
 
-
+#menu-menu-principal li:nth-child(3) a {
+    color:white!important;
+  }
+  
+.oceanwp-mobile-menu-icon.mobile-right {
+    padding-right: 10px;
+}
