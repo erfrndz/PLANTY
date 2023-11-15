@@ -22,6 +22,15 @@ function custom_menu_items($items, $args) {
             $items = substr_replace($items, $admin_item, $position, 0);
         }
     }
+
+    if (is_user_logged_in() && $args->theme_location == 'main_menu') {
+        $admin_item = '<li><a href="' . get_home_url() . '">Admin</a></li>';
+        $position = strpos($items, '<li class="nav-bouton menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-21"'); 
+        if ($position !== false) {
+            $items = substr_replace($items, $admin_item, $position, 0);
+        }
+    }
+
     return $items;
 }
 
